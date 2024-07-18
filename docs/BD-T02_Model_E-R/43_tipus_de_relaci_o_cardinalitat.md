@@ -13,7 +13,7 @@ Ho representarem així:
 
 
 
-![ref1]
+![ref1](relacio_card1.png)
 
 
 
@@ -21,7 +21,7 @@ o millor:
 
 
 
-![ref2]
+![ref2](relacio_card2.png)
 
 
 
@@ -49,5 +49,3 @@ La cardinalitat M:N també la podríem representar N:N. Senzillament vol dir que
 Llicenciat sota la [Llicència Creative Commons Reconeixement NoComercial CompartirIgual 3.0](http://creativecommons.org/licenses/by-nc-sa/3.0/)
 **Created with an evaluation copy of Aspose.Words. To discover the full versions of our APIs please visit: https://products.aspose.com/words/**
 
-[ref1]: 43_tipus_de_relaci_o_cardinalitat.002.png
-[ref2]: 43_tipus_de_relaci_o_cardinalitat.003.png

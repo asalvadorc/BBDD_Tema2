@@ -6,7 +6,7 @@ Aplicant la participació total i parcial, el nostre exemple quedarà:
 
 
 
-![](aplicaci_a_lexemple4.002.png)
+![ref1](estes_tot3.png)
 
 
 

@@ -7,7 +7,7 @@ Empleat seria el **SUPERTIPUS** o **SUPERCLASSE** i els altres els **SUBTIPUS**.
 
 
 
-![](63_generalitzaci_i_herncia.002.png)
+![ref1](T2_6_7_2.png)
 
 
 

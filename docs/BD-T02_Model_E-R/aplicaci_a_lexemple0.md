@@ -4,7 +4,7 @@ En el nostre exemple del punt 2 quedarien les altres entitats amb els següents 
 
 
 
-![](aplicaci_a_lexemple0.002.png)
+![ref1](atributs3.png)
 
 
 

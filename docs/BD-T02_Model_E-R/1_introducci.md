@@ -13,7 +13,7 @@ El **Model Entitat-Relació** (**M E/R**) és un model d'alt nivell, que ens per
 
 Un esquema de tot el procés seria el següent: 
 
-![](1_introducci.002.png)
+![ref1](analisis.png)
 
 En realitat, en sistemes grans, no podem separar l'anàlisi de les dades de l'anàlisi dels processos a fer amb les dades. Aleshores, paral·lel al disseny conceptual, és a dir, després de l'anàlisi de requeriments aniria l'Anàlisi Funcional (línia discontínua), encarregat de veure quins processos generals són necessaris en el sistema. Nosaltres no filarem tan prim. 
 

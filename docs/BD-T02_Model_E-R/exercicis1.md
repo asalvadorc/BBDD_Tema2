@@ -1,5 +1,5 @@
 
-![ref1]
+![ref1](icon_activity.gif)
 ## **Exercici 3**
 Dissenyar un esquema E/R que arreplegue informació sobre una universitat. Es considera que: 
 
@@ -13,7 +13,7 @@ Dissenyar un esquema E/R que arreplegue informació sobre una universitat. Es co
 
 - Existeixen àrees de coneixement (com per exemple l'àrea d'*Informàtica*, que inclou els departaments de *Llenguatges i Sistemes Informàtics* i de *Enginyeria i Ciència dels Computadors*) i tot departament tindrà una única àrea de coneixement.
 
-![ref1]
+![ref1](icon_activity.gif)
 ## **Exercici 4**
 L'anàlisi de requisits d'una determinada xarxa bancària és el següent:
 
@@ -24,7 +24,7 @@ L'anàlisi de requisits d'una determinada xarxa bancària és el següent:
 - Cada compte pot tenir domiciliacions associades a ell.
 - Les sucursals poden atorgar préstecs als clients, que no estaran associats als comptes. Cada préstec s'atorga a nom d'un únic client, i a un client se li pot atorgar més d'un préstec.
 
-![ref1]
+![ref1](icon_activity.gif)
 ## **Exercici 5**
 Es vol mantenir informació sobre una **biblioteca**, on podem tenir de cada llibre més d'un exemplar, que a més es poden prestar, i que també ens interessa un històric de préstecs. L'anàlisi de requeriments seria el següent:
 
@@ -32,7 +32,7 @@ Es vol mantenir informació sobre una **biblioteca**, on podem tenir de cada lli
 - Els préstecs són dels exemplars dels llibres, que són les materialitzacions dels llibres. Un exemplar es pot prestar a un únic lector (del qual tindrem Dni, Nom, Adreça i Telèfon), i ens interessa la data en la qual s'ha prestat. Un lector pot tenir més d'un llibre prestat.
 - A banda del préstec actual, voldrem saber en el passat a qui s'ha prestat. Per tant en l'històric de préstecs cada exemplar s'haurà prestat a molts lectors, i per a poder dur el seguiment ens interessa la data de préstec i la de tornada.
 
-![ref1]
+![ref1](icon_activity.gif)
 ## **Exercici 6**
 Realitzeu l'esquema E/R que arreplegue informació d'una associació d'afeccionats a les **papallones**, que volen guardar informació respecte a exemplars capturats bé per a la seua observació, bé per a ser inclosos en una col·lecció: 
 
@@ -48,7 +48,7 @@ Realitzeu l'esquema E/R que arreplegue informació d'una associació d'afecciona
 
 - Una papallona només pot pertànyer a una col·lecció, i una col·lecció està formada almenys per un exemplar. Tota papallona que pertany a una col·lecció tindrà un determinat valor. 
 
-![ref1]
+![ref1](icon_activity.gif)
 ## **Exercici 7**
 Una empresa de línies ferroviàries vol que se li dissenye una Base de Dades per a la seua gestió. Aquesta és l'anàlisi de requeriments:
 

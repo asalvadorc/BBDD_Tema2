@@ -9,23 +9,23 @@ Representarem la relació per un rombe, amb el nom de la relació a l’interior
 
 Així tindrem: 
 
-![ref1]
+![ref1](relacio1.png)
 
 En una Relació poden intervenir 2 entitats (Relació Binària), 3 entitats (ternària), o fins i tot més. Aquest número serà el **GRAU** de la relació. 
 
 Un exemple de relació ternària seria: 
 
-![ref2]
+![ref2](relacio2.png)
 
 I una ocurrència d’aquesta relació podria ser: Comptabilitat compra una calculadora a Distribucions Garcia, S.L. 
 
 També es pot donar el cas que només intervinga una entitat. Aleshores seria reflexiva o de grau 1. Per exemple, els empleats tenen un supervisor, que també és un empleat de la companyia. 
 
-![ref3]
+![ref3](relacio3.png)
 
 Per últim, també es pot donar el cas que dues entitats tinguen entre elles més d’una relació. En el nostre exemple els empleats pertanyen als departaments. Però alguns empleats dirigeixen els departaments, i aquesta és una relació distinta de l’anterior. Per això convé posar el nom de la relació, per evitar confusions. 
 
-![ref4]
+![ref4](relacio4.png)
 
 
 
@@ -43,7 +43,3 @@ Potser a mida que fem exercicis ens entre perea de posar nom a totes les relacio
 Llicenciat sota la [Llicència Creative Commons Reconeixement NoComercial CompartirIgual 3.0](http://creativecommons.org/licenses/by-nc-sa/3.0/)
 **Created with an evaluation copy of Aspose.Words. To discover the full versions of our APIs please visit: https://products.aspose.com/words/**
 
-[ref1]: 41_relaci.002.png
-[ref2]: 41_relaci.003.png
-[ref3]: 41_relaci.004.png
-[ref4]: 41_relaci.005.png

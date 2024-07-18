@@ -7,7 +7,7 @@ L'exemple, considerant únicament els subtipus **CAP** i **TREBALLADOR** d’**E
 
 
 
-![](aplicaci_a_lexemple5.002.png)
+![](esp2.png)
 
 
 

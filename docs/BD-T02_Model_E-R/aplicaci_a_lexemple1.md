@@ -6,7 +6,7 @@ Després d'incorporar les relacions, el nostre exemple quedarà:
 
 
 
-![](aplicaci_a_lexemple1.002.png)
+![ref1](relacio5.png)
 
 
 

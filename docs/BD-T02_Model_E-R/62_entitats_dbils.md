@@ -24,15 +24,15 @@ En el nostre exemple, si considerem que per a identificar l’entitat FAMILIAR �
 
 Representarem la dependència en existència així (si considerem que amb el nom del familiar tenim prou per a identificar): 
 
-![ref1]
+![ref1](T2_6_5.png)
 
 I la dependència en identificació així (si considerem que també fa falta l'identificador de l'empleat, que és el DNI): 
 
-![ref2]
+![ref2](T2_6_6.png)
 
 Representarem aquesta última de forma alternativa amb el rombe de doble ratlla 
 
-![ref2]
+![ref2](T2_6_7.png)
 
 -----
 <a name="_ftn1"></a>[\[1\]](#_ftnref1 "_ftn1") En la pràctica podríem pensar que tota entitat que participa de forma total en una relació és dèbil com a mínim en existència. Per exemple: la participació total de Familiar vol dir que tot familiar ho és d'un empleat; la dependència en existència vol dir que no pot existir un familiar sense l'empleat. Com veiem la diferència és molt subtil. A pesar d'això intentarem fer l’esforç de diferenciar ambdós casos, perquè en el següent tema sí que ens durà a dues maneres de procedir diferents. 

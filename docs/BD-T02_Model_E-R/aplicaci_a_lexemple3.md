@@ -6,7 +6,7 @@ L'exemple cada vegada està més complet:
 
 
 
-![](aplicaci_a_lexemple3.002.png)
+![ref1](relacio_card3.png)
 
 
 

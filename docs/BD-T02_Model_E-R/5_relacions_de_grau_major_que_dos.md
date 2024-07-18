@@ -37,8 +37,4 @@ Algunes ferramentes de disseny de B.D. només permeten relacions binàries. Ales
 Llicenciat sota la [Llicència Creative Commons Reconeixement NoComercial CompartirIgual 3.0](http://creativecommons.org/licenses/by-nc-sa/3.0/)
 **Created with an evaluation copy of Aspose.Words. To discover the full versions of our APIs please visit: https://products.aspose.com/words/**
 
-[ref1]: 5_relacions_de_grau_major_que_dos.002.png
-[ref2]: 5_relacions_de_grau_major_que_dos.003.png
-[ref3]: 5_relacions_de_grau_major_que_dos.004.png
-[ref4]: 5_relacions_de_grau_major_que_dos.005.png
-[def]: 5_relacions_de_grau_major_que_dos.005.png
+

@@ -32,8 +32,9 @@ Per als atributs multivaluats posarem ***n*** en la línia. I els derivats els r
 
 Ací tindríem dues maneres (absolutament equivalents) de representar l'entitat EMPLEAT amb els seus atributs.
 
-|![ref1]| |![ref2]|
-| :- | :- | :- |
+|![ref1](atributs1.png)
+| |![ref2](atributs2.png)
+|| :- | :- | :- |
 
 [« Anterior](aplicaci_a_lexemple.md) | [Següent »](aplicaci_a_lexemple0.md)
 

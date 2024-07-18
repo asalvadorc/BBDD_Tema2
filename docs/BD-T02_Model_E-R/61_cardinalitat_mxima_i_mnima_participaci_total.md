@@ -2,7 +2,7 @@ Bases de Dades
 
 CARDINALITAT MÀXIMA I MÍNIMA 
 ### **CARDINALITAT MÀXIMA i MÍNIMA** d’una entitat que participa en una relació, són respectivament el número màxim i mínim d’ocurrències d’aquesta entitat que estan relacionades amb una ocurrència de l’altra entitat
-![ref1]
+![ref1](estes_tot1.png)
 
 Per exemple 
 
@@ -16,7 +16,7 @@ Una entitat participa de forma **TOTAL** en una relació, si totes les seues ocu
 
 Representarem que una entitat participa de forma total en una relació amb una doble ratlla 
 
-![ref2]
+![ref2](estes_tot2.png)
 
 
 
@@ -34,5 +34,3 @@ Com que de les dues maneres anteriors, la cardinalitat mínima i la participaci�
 Llicenciat sota la [Llicència Creative Commons Reconeixement NoComercial CompartirIgual 3.0](http://creativecommons.org/licenses/by-nc-sa/3.0/)
 **Created with an evaluation copy of Aspose.Words. To discover the full versions of our APIs please visit: https://products.aspose.com/words/**
 
-[ref1]: 61_cardinalitat_mxima_i_mnima_participaci_total.002.png
-[ref2]: 61_cardinalitat_mxima_i_mnima_participaci_total.003.png

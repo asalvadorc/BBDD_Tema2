@@ -4,7 +4,7 @@ Posarem en roig els atributs de relació:
 
 
 
-![](aplicaci_a_lexemple2.002.png)
+![](relacio6.png)
 
 
 

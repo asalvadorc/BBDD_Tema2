@@ -4,7 +4,7 @@ En el nostre exemple, el del punt 2, quedaran les següents Entitats:
 
 
 
-![](aplicaci_a_lexemple.002.png)
+![ref1](entitats.png)
 
 
 
