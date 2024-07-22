@@ -38,7 +38,7 @@ Potser a mida que fem exercicis ens entre perea de posar nom a totes les relacio
 
 <a name="_ftn1"></a>[\[1\]](#_ftnref1 "_ftn1") Per a no confondre amb les Relacions del Model Relacional, alguns autors prefereixen traduir el mot anglès *Relationship* com **Interrelació** o **Vincle** en compte de **Relació**
 
-[« Anterior](4_les_relacions_del_model_er.md) | [Següent »](aplicaci_a_lexemple1.md)
+
 
 Llicenciat sota la [Llicència Creative Commons Reconeixement NoComercial CompartirIgual 3.0](http://creativecommons.org/licenses/by-nc-sa/3.0/)
 **Created with an evaluation copy of Aspose.Words. To discover the full versions of our APIs please visit: https://products.aspose.com/words/**

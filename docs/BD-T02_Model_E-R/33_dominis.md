@@ -6,7 +6,7 @@ Més d'un atribut pot compartir el mateix domini, per exemple si incloem l'atrib
 
 Quan treballem en el Model Relacional, en el tema següent, una de les restriccions que farem serà definir clarament el domini de cada atribut, per a no deixar introduir valors invàlids. 
 
-[« Anterior](aplicaci_a_lexemple0.md) | [Següent »](exercicis.md)
+
 
 Llicenciat sota la [Llicència Creative Commons Reconeixement NoComercial CompartirIgual 3.0](http://creativecommons.org/licenses/by-nc-sa/3.0/)
 **Created with an evaluation copy of Aspose.Words. To discover the full versions of our APIs please visit: https://products.aspose.com/words/**

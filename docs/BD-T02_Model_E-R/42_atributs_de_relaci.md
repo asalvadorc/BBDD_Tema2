@@ -5,7 +5,7 @@ Les relacions també poden tenir atributs, igual que les entitats. Un atribut de
 
 Representarem els atributs de relació com els atributs d'entitat, però ara units a les relacions. 
 
-[« Anterior](aplicaci_a_lexemple1.md) | [Següent »](aplicaci_a_lexemple2.md)
+
 
 Llicenciat sota la [Llicència Creative Commons Reconeixement NoComercial CompartirIgual 3.0](http://creativecommons.org/licenses/by-nc-sa/3.0/)
 **Created with an evaluation copy of Aspose.Words. To discover the full versions of our APIs please visit: https://products.aspose.com/words/**

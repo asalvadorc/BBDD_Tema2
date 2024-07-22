@@ -9,7 +9,6 @@ Suposem que en l'exemple posem la condició (ben lògica) que el cap d'un depart
 
 **Rex2**: Un empleat només pot treballar en projectes coordinats pel seu departament. 
 
-[« Anterior](aplicaci_a_lexemple5.md) | [Següent »](exercicis1.md)
 
 Llicenciat sota la [Llicència Creative Commons Reconeixement NoComercial CompartirIgual 3.0](http://creativecommons.org/licenses/by-nc-sa/3.0/)
 **Created with an evaluation copy of Aspose.Words. To discover the full versions of our APIs please visit: https://products.aspose.com/words/**

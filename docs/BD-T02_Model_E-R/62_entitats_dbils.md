@@ -37,7 +37,6 @@ Representarem aquesta última de forma alternativa amb el rombe de doble ratlla
 -----
 <a name="_ftn1"></a>[\[1\]](#_ftnref1 "_ftn1") En la pràctica podríem pensar que tota entitat que participa de forma total en una relació és dèbil com a mínim en existència. Per exemple: la participació total de Familiar vol dir que tot familiar ho és d'un empleat; la dependència en existència vol dir que no pot existir un familiar sense l'empleat. Com veiem la diferència és molt subtil. A pesar d'això intentarem fer l’esforç de diferenciar ambdós casos, perquè en el següent tema sí que ens durà a dues maneres de procedir diferents. 
 
-[« Anterior](aplicaci_a_lexemple4.md) | [Següent »](63_generalitzaci_i_herncia.md)
 
 Llicenciat sota la [Llicència Creative Commons Reconeixement NoComercial CompartirIgual 3.0](http://creativecommons.org/licenses/by-nc-sa/3.0/)
 **Created with an evaluation copy of Aspose.Words. To discover the full versions of our APIs please visit: https://products.aspose.com/words/**

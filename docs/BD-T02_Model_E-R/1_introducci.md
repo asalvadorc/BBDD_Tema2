@@ -1,5 +1,5 @@
 Bases de Dades
-
+## **Introducció**
 El **Model Entitat-Relació** (**M E/R**) és un model d'alt nivell, que ens permetrà representar el món que volem amb un llenguatge, una estructura més propera a nosaltres. L'utilitzarem dins de tot el procés de creació de la Base de Dades, que consistirà en: 
 
 - A partir de la realitat, estudiar-la (investigant, entrevistant els usuaris, ...) i fer l'**Anàlisi de Requeriments**, és a dir, què es vol. El resultat serà un conjunt de requeriments redactats de forma concisa. 
@@ -21,7 +21,5 @@ En el Model E/R estudiarem les entitats o objectes del nostre univers, la nostra
 
 El Model E/R el va proposar Peter P. Chen en 1976. Posteriorment molts autors van aportar més coses, creant l'anomenat Model E/R Estès (M EE/R), encara que en realitat hi ha tota una gamma de models estesos. 
 
-[« Anterior](objectius_i_coneixements_previs.md) | [Següent »](2_exemple.md)
 
 Llicenciat sota la [Llicència Creative Commons Reconeixement NoComercial CompartirIgual 3.0](http://creativecommons.org/licenses/by-nc-sa/3.0/)
-**Created with an evaluation copy of Aspose.Words. To discover the full versions of our APIs please visit: https://products.aspose.com/words/**

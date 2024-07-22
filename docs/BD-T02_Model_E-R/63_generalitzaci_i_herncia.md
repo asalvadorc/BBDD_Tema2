@@ -21,7 +21,7 @@ Hi ha més d'una classe d'especialització depenent de dos criteris:
 
 No anem a insistir molt en aquest tema perquè a més, en el tractament posterior (quan passem al Model Relacional), de vegades es representen totes les entitats, però de vegades per motius pràctics se simplifica (suprimint bé el supertipus, bé els subtipus). 
 
-[« Anterior](62_entitats_dbils.md) | [Següent »](aplicaci_a_lexemple5.md)
+
 
 Llicenciat sota la [Llicència Creative Commons Reconeixement NoComercial CompartirIgual 3.0](http://creativecommons.org/licenses/by-nc-sa/3.0/)
 **Created with an evaluation copy of Aspose.Words. To discover the full versions of our APIs please visit: https://products.aspose.com/words/**

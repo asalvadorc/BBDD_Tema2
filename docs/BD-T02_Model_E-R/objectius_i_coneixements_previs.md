@@ -15,7 +15,5 @@ Bases de Dades
 
 1. En definitiva, saber confeccionar correctament l'esquema E-R a partir d'una situació real. 
 
-[« Anterior](index.md) | [Següent »](1_introducci.md)
 
 Llicenciat sota la [Llicència Creative Commons Reconeixement NoComercial CompartirIgual 3.0](http://creativecommons.org/licenses/by-nc-sa/3.0/)
-**Created with an evaluation copy of Aspose.Words. To discover the full versions of our APIs please visit: https://products.aspose.com/words/**

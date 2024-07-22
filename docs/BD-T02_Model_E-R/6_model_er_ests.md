@@ -8,7 +8,5 @@ O un altre exemple, hem posat que la relació DIRIGEIX és **1:1**, i això ens 
 
 Això fa que el Model E/R s'haja desenvolupat amb les aportacions de més autors, fins arribar al **MODEL ENTITAT-RELACIÓ ESTÈS**. 
 
-[« Anterior](5_relacions_de_grau_major_que_dos.md) | [Següent »](61_cardinalitat_mxima_i_mnima_participaci_total.md)
-
 Llicenciat sota la [Llicència Creative Commons Reconeixement NoComercial CompartirIgual 3.0](http://creativecommons.org/licenses/by-nc-sa/3.0/)
 **Created with an evaluation copy of Aspose.Words. To discover the full versions of our APIs please visit: https://products.aspose.com/words/**

@@ -29,7 +29,7 @@ Com que de les dues maneres anteriors, la cardinalitat mínima i la participaci�
 
 <a name="_ftn1"></a>[<sup>\[1\]</sup>](#_ftnref1 "_ftn1") Hi ha autors que les posen a l’inrevés, en les altres entitats. 
 
-[« Anterior](6_model_er_ests.md) | [Següent »](aplicaci_a_lexemple4.md)
+
 
 Llicenciat sota la [Llicència Creative Commons Reconeixement NoComercial CompartirIgual 3.0](http://creativecommons.org/licenses/by-nc-sa/3.0/)
 **Created with an evaluation copy of Aspose.Words. To discover the full versions of our APIs please visit: https://products.aspose.com/words/**
