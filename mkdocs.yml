@@ -4,7 +4,7 @@ theme:
   name: readthedocs
   logo: assets/logocaminas.png
 
- extra_css:
+extra_css:
   - css/extra.css 
 nav:
   - Tema 2-Modelo Entidad-Relación:
