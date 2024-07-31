@@ -37,7 +37,7 @@ nav:
     - 6. Model E/R Estès: 
         - BD-T02_Model_E-R/6_model_er_ests.md
         - 6.1 Cardinalitat màxima i mínima. Participació total.: 
-          - BD-T02_Model_E-R/61_cardinalitat_mxima_i_mnima_participaci_total.md) 
+          - BD-T02_Model_E-R/61_cardinalitat_mxima_i_mnima_participaci_total.md
           - Aplicació a l'exemple: BD-T02_Model_E-R/aplicaci_a_lexemple4.md
         - 6.2 Entitats dèbils: BD-T02_Model_E-R/62_entitats_dbils.md
         - 6.3 Generalització i herència: 

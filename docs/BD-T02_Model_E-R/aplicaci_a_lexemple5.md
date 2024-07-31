@@ -1,7 +1,9 @@
-Bases de Dades
+# Aplicació a l'exemple
 
 
-L'exemple, considerant únicament els subtipus **CAP** i **TREBALLADOR** d’**EMPLEAT**, quedaria així: 
+
+L'exemple, considerant únicament els subtipus **CAP** i **TREBALLADOR**
+d’**EMPLEAT** , quedaria així:
 
 
 
@@ -11,8 +13,11 @@ L'exemple, considerant únicament els subtipus **CAP** i **TREBALLADOR** d’**E
 
 
 
-On "**T,D**" que està dins del triangle significa que l'especialització és Total i Disjunta 
+On "**T,D** " que està dins del triangle significa que l'especialització és
+Total i Disjunta
 
 
-Llicenciat sota la [Llicència Creative Commons Reconeixement NoComercial CompartirIgual 3.0](http://creativecommons.org/licenses/by-nc-sa/3.0/)
-**Created with an evaluation copy of Aspose.Words. To discover the full versions of our APIs please visit: https://products.aspose.com/words/**
+
+Llicenciat sota la  [Llicència Creative Commons Reconeixement NoComercial
+CompartirIgual 3.0](http://creativecommons.org/licenses/by-nc-sa/3.0/)
+
