@@ -12,17 +12,15 @@ nav:
     - 1. Introducció: BD-T02_Model_E-R/1_introducci.md
     - 2. Exemple: BD-T02_Model_E-R/2_exemple.md
     - 3. Les Entitats del Model E/R: 
-      - Vídeo: BD-T02_Model_E-R/3_les_entitats_del_model_er.md
       - 3.1 Entitats: 
-         - Descripció: BD-T02_Model_E-R/31_entitats.md
-         - Aplicació a l'exemple: BD-T02_Model_E-R/aplicaci_a_lexemple.md
+        - BD-T02_Model_E-R/31_entitats.md
+        - Aplicació a l'exemple: BD-T02_Model_E-R/aplicaci_a_lexemple.md
       - 3.2 Atributs: 
-          - Descripció: BD-T02_Model_E-R/32_atributs.md
-          - Aplicació a l'exemple: BD-T02_Model_E-R/aplicaci_a_lexemple0.md
+         - BD-T02_Model_E-R/32_atributs.md
+         - Aplicació a l'exemple: BD-T02_Model_E-R/aplicaci_a_lexemple0.md
       - 3.3 Dominis: BD-T02_Model_E-R/33_dominis.md
       - Exercicis: BD-T02_Model_E-R/exercicis.md
     - 4. Les Relacions del Model E/R: 
-      - BD-T02_Model_E-R/4_les_relacions_del_model_er.md
       - 4.1 Relació: 
         - BD-T02_Model_E-R/41_relaci.md
         - Aplicació a l'exemple: BD-T02_Model_E-R/aplicaci_a_lexemple1.md

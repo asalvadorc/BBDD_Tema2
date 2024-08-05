@@ -1,8 +1,11 @@
 # 4.1 Relació
 
+Encara no hem relacionat les entitats entre elles, i per tant encara no hem
+dit que tal treballador pertany a tal departament (Joan Peris està en
+Comptabilitat, per exemple), o que tal treballador està en tal projecte
+dedicant-li tantes hores setmanals.
 
-
-**RELACIÓ**[1] és una associació o correspondència entre entitats.
+**RELACIÓ** [1] és una associació o correspondència entre entitats.
 
 El **TIPUS DE RELACIÓ** serà l’estructura genèrica, l’associació entre dos
 tipus d’entitat, i englobarà les **OCURRÈNCIES DE RELACIÓ** , que relacionaran

@@ -1,5 +1,10 @@
 # 3.1 Entitats
 
+Per a fer un esquema amb el Model Entitat-Relació, començarem sempre per les
+primeres, per les entitats.
+
+És a dir, a partir de les especificacions del problema, intentarem esbrinar
+les entitats.
 
 L'**ENTITAT** serà una persona, cosa, lloc, concepte o succés, amb existència
 real o abstracta, que ens és d'interès.
