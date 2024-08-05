@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://asalvadorc.github.io/BBDD_Tema2/BD-T02_Model_E-R/63_generalitzaci_i_herncia/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>6.3 Generalització i herència - BD - Bases de Dades</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../css/extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "6.3 Generalitzaci\u00f3 i her\u00e8ncia";
+        var mkdocs_page_input_path = "BD-T02_Model_E-R/63_generalitzaci_i_herncia.md";
+        var mkdocs_page_url = "/BBDD_Tema2/BD-T02_Model_E-R/63_generalitzaci_i_herncia/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../..">
+          <img src="../../assets/logocaminas.png" class="logo" alt="Logo"/>
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Tema 2-Modelo Entidad-Relación</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../objectius_i_coneixements_previs/">Objectius i coneixements previs</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../1_introducci/">1. Introducció</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../2_exemple/">2. Exemple</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >3. Les Entitats del Model E/R</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" >3.1 Entitats</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../31_entitats/">3.1 Entitats</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../aplicaci_a_lexemple/">Aplicació a l'exemple</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >3.2 Atributs</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../32_atributs/">3.2 Atributs</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../aplicaci_a_lexemple0/">Aplicació a l'exemple</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../33_dominis/">3.3 Dominis</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../exercicis/">Exercicis</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >4. Les Relacions del Model E/R</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" >4.1 Relació</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../41_relaci/">4.1 Relació</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../aplicaci_a_lexemple1/">Aplicació a l'exemple</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >4.2 Atributs de Relació</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../42_atributs_de_relaci/">4.2 Atributs de Relació</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../aplicaci_a_lexemple2/">Aplicació a l'exemple</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >4.3 Tipus de Relació o Cardinalitat</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../43_tipus_de_relaci_o_cardinalitat/">4.3 Tipus de Relació o Cardinalitat</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../aplicaci_a_lexemple3/">Aplicació a l'exemple</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../exercicis0/">Exercicis</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../5_relacions_de_grau_major_que_dos/">5. Relacions de grau major que dos</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" >6. Model E/R Estès</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../6_model_er_ests/">6. Model E/R Estès</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >6.1 Cardinalitat màxima i mínima. Participació total.</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../61_cardinalitat_mxima_i_mnima_participaci_total/">6.1 Cardinalitat màxima i mínima. Participació total.</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../aplicaci_a_lexemple4/">Aplicació a l'exemple</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../62_entitats_dbils/">6.2 Entitats dèbils</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" >6.3 Generalització i herència</a>
+    <ul class="current">
+                <li class="toctree-l3 current"><a class="reference internal current" href="#">6.3 Generalització i herència</a>
+    <ul class="current">
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../aplicaci_a_lexemple5/">Aplicació a l'exemple</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../7_restriccions_externes/">7. Restriccions externes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../exercicis1/">Exercicis</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../informaci_addicional/">Informació addicional</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">BD - Bases de Dades</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Tema 2-Modelo Entidad-Relación</li>
+          <li class="breadcrumb-item">6. Model E/R Estès</li>
+          <li class="breadcrumb-item">6.3 Generalització i herència</li>
+      <li class="breadcrumb-item active">6.3 Generalització i herència</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="63-generalitzacio-i-herencia">6.3 Generalització i herència</h1>
+<p>Anem a comentar, prou per damunt, un altre aspecte recollit en el Model E/R
+Estès. I és quan una entitat es pot subdividir en d'altres. Per exemple
+podríem refinar l'entitat EMPLEAT en CAPS, SECRETARIS i TREBALLADORS.</p>
+<p>Empleat seria el <strong>SUPERTIPUS</strong> o <strong>SUPERCLASSE</strong> i els altres els
+<strong>SUBTIPUS</strong>. EMPLEAT seria la <strong>GENERALITZACIÓ</strong> dels altres. I els altres
+serien l'<strong>ESPECIALITZACIÓ</strong> d'EMPLEAT.</p>
+<p><img alt="" src="../T2_6_7_2.png" /></p>
+<p>Un aspecte important és l'<strong>HERÈNCIA</strong> , que consisteix en què els subtipus
+heretaran els atributs del supertipus, de manera que no caldrà repetir-los.
+Únicament s'hauran de declarar els atributs específics de la subclasse (en CAP
+podríem tenir l'opinió del seu departament; en SECRETARI número de pulsacions
+per segon o coneixements d'informàtica; en TREBALLADOR si està disposat a fer
+hores extres).</p>
+<p>Hi ha més d'una classe d'especialització depenent de dos criteris:</p>
+<ul>
+<li>
+<p>Si se <strong>solapen</strong> (una ocurrència de la superclasse pot pertànyer a més d'una subclasse) o són <strong>disjuntes</strong>(una ocurrència de la superclasse només pot pertànyer a una subclasse). Per exemple els empleats especialitzats per torn de treball (matí, vesprada, nit), pot donar-se el cas que algun treballador treballe matí i vesprada de forma no intensiva (atenció a públic), i per tant seria solapada. Un exemple d'especialització no solapada seria l'especialització per tipus de treball (cap, secretari, treballador), on un empleat no pot pertànyer a dues subclasses.</p>
+</li>
+<li>
+<p>Si és <strong>total</strong> (totes les ocurrències del supertipus pertanyen a algun subtipus) o <strong>parcial</strong>. Un exemple de total seria una especialització per dedicació a l'empresa (completa o no completa). Un exemple de parcial seria l'especialització per tipus de treball (cap, secretari, treballador) ja que podria haver algun treballador que no coincidesca (un assessor,...) </p>
+</li>
+</ul>
+<p>No anem a insistir molt en aquest tema perquè a més, en el tractament
+posterior (quan passem al Model Relacional), de vegades es representen totes
+les entitats, però de vegades per motius pràctics se simplifica (suprimint bé
+el supertipus, bé els subtipus).</p>
+<p>Llicenciat sota la  <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Llicència Creative Commons Reconeixement NoComercial
+CompartirIgual 3.0</a></p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../62_entitats_dbils/" class="btn btn-neutral float-left" title="6.2 Entitats dèbils"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../aplicaci_a_lexemple5/" class="btn btn-neutral float-right" title="Aplicació a l'exemple">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../62_entitats_dbils/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../aplicaci_a_lexemple5/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
