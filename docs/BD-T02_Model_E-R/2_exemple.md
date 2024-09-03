@@ -1,4 +1,4 @@
-# 2\. Exemple
+# 2. Exemple
 
 Anem a presentar un exemple sobre el qual ens basarem durant tot el tema. Es
 tracta d'una companyia, i el resultat de l'anàlisi de requeriments és el

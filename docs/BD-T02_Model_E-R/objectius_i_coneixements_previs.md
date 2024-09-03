@@ -2,7 +2,6 @@
 
 ![](icon_objectives.gif)
 
-## Objectius
 
   1. A partir d'una situació real, saber extraure la informació útil i necessària.
   
