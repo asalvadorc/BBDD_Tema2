@@ -23,7 +23,7 @@ nav:
       ##- 4.3 Tipus de Relació o Cardinalitat:
       ##    - BD-T02_Model_E-R/43_tipus_de_relaci_o_cardinalitat.md
       ##    - Aplicació a l'exemple: BD-T02_Model_E-R/aplicaci_a_lexemple3.md
-      ##- Exercicis: BD-T02_Model_E-R/exercicis0.md
+    - Exercicis: BD-T02_Model_E-R/exercicis0.md
     - 5. Relacions de grau major que dos: BD-T02_Model_E-R/5_relacions_de_grau_major_que_dos.md
     - 6. Model E/R Estès: BD-T02_Model_E-R/6_model_er_ests.md
         ##- 6.1 Cardinalitat màxima i mínima. Participació total.: 
