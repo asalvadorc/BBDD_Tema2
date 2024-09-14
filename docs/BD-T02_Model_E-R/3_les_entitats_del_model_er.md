@@ -122,8 +122,8 @@ atributs:
 
 ![](atributs3.png)
 
-
-## 3.3 Dominis
+<!-->
+### 3.2.1 Dominis
 
 
 
@@ -142,7 +142,7 @@ Quan treballem en el Model Relacional, en el tema següent, una de les
 restriccions que farem serà definir clarament el domini de cada atribut, per a
 no deixar introduir valors invàlids.
 
-  
+-->  
 
 Llicenciat sota la  [Llicència Creative Commons Reconeixement NoComercial
 CompartirIgual 3.0](http://creativecommons.org/licenses/by-nc-sa/3.0/)

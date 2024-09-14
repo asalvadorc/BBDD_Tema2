@@ -9,7 +9,7 @@ dedicant-li tantes hores setmanals.
   <source src="T02_Peli2.mp4" type="video/mp4">
   Tu navegador no soporta la etiqueta de video.
 </video>
-
+<p></p>
 ## 4.1 Relació
 
 Encara no hem relacionat les entitats entre elles, i per tant encara no hem
@@ -17,7 +17,7 @@ dit que tal treballador pertany a tal departament (Joan Peris està en
 Comptabilitat, per exemple), o que tal treballador està en tal projecte
 dedicant-li tantes hores setmanals.
 
-**RELACIÓ** [1] és una associació o correspondència entre entitats.
+**RELACIÓ** és una associació o correspondència entre entitats.
 
 El **TIPUS DE RELACIÓ** serà l’estructura genèrica, l’associació entre dos
 tipus d’entitat, i englobarà les **OCURRÈNCIES DE RELACIÓ** , que relacionaran
@@ -57,24 +57,17 @@ confusions.
 ![](relacio4.png)
 
 
+<u>**Nota**</u> 
+<div style="background-color: #d6eaf8; color: black; padding: 5px;">
 
-> **_Nota_**
-
-> Potser a mida que fem exercicis ens entre perea de posar nom a totes les
-> relacions, sobretot perquè moltes estarà molt clar què signifiquen. Però
-> haurem de posar sempre el nom en aquelles que puguen dur a confusió o
-> aquelles que no està clar el seu significat.
-
+  Potser a mida que fem exercicis ens entre perea de posar nom a totes les
+  relacions, sobretot perquè moltes estarà molt clar què signifiquen. Però
+  haurem de posar sempre el nom en aquelles que puguen dur a confusió o
+  aquelles que no està clar el seu significat.
+<p></p>
+</div>
   
-
-  
-
-* * *
-
-[1] Per a no confondre amb les Relacions del Model Relacional, alguns autors
-prefereixen traduir el mot anglès _Relationship_ com **Interrelació** o
-**Vincle** en compte de **Relació**
-
+<p></p>
 ### Aplicació a l'exemple
 
 
@@ -82,14 +75,9 @@ prefereixen traduir el mot anglès _Relationship_ com **Interrelació** o
 Després d'incorporar les relacions, el nostre exemple quedarà:
 
 
-
-
-
 ![](relacio5.png)
 
 ## 4.2 Atributs de Relació
-
-
 
 Les relacions també poden tenir atributs, igual que les entitats. Un atribut
 de relació seria el número d’hores que treballa un empleat en un projecte, que

@@ -1,4 +1,4 @@
-# 5\. Relacions de grau major que dos
+# 5. Relacions de grau major que dos
 
 
 
@@ -54,13 +54,11 @@ construint una entitat nova, dèbil, que depenga en identificació de les altres
 
 
 
-**
+
 
 ![](T2_5_4.PNG)
 
-**
 
-****
 
 
 Llicenciat sota la  [Llicència Creative Commons Reconeixement NoComercial

@@ -31,7 +31,7 @@ estan relacionades amb una ocurrència de l’altra entitat
 
 Un empleat pot dirigir 0 o 1 departament, i un departament és dirigit (com a
 mínim i com a màxim) per 1 empleat. Ho posarem entre parèntesis **(card.
-mínima, card. màxima)** al costat de l’entitat[1]. En realitat el nou concepte
+mínima, card. màxima)** al costat de l’entitat. En realitat el nou concepte
 és la cardinalitat mínima, ja que la màxima és la cardinalitat d'abans. Els
 valors habituals de cardinalitat mínima són 0 i 1.
 
