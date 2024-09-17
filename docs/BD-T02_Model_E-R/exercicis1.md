@@ -74,7 +74,7 @@ col·lecció:
 
   * Una papallona només pot pertànyer a una col·lecció, i una col·lecció està formada almenys per un exemplar. Tota papallona que pertany a una col·lecció tindrà un determinat valor. 
 
-
+<!--
 ## ![](icon_activity.gif) Exercici 7
 
 Una empresa de línies ferroviàries vol que se li dissenye una Base de Dades
@@ -96,7 +96,7 @@ Opcionalment, podem posar totes les estacions a les quals s'arriba en un
 trajecte (substituint l'estació origen i destí). Haurem de saber si l'estació
 és origen, destí o de pas.
 
-
+-->
 
 Llicenciat sota la  [Llicència Creative Commons Reconeixement NoComercial
 CompartirIgual 3.0](http://creativecommons.org/licenses/by-nc-sa/3.0/)
