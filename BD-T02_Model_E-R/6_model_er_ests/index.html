@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://asalvadorc.github.io/BBDD_Tema2/BD-T02_Model_E-R/6_model_er_ests/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>6. Model E/R Estès - BD - Bases de Dades</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../css/extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "6. Model E/R Est\u00e8s";
+        var mkdocs_page_input_path = "BD-T02_Model_E-R/6_model_er_ests.md";
+        var mkdocs_page_url = "/BBDD_Tema2/BD-T02_Model_E-R/6_model_er_ests/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../..">
+          <img src="../../assets/logocaminas.png" class="logo" alt="Logo"/>
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Tema 2-Modelo Entidad-Relación</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../objectius_i_coneixements_previs/">Objectius i coneixements previs</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../1_introducci/">1. Introducció</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../2_exemple/">2. Exemple</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../3_les_entitats_del_model_er/">3. Les Entitats del Model E/R</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../exercicis/">Exercicis</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../4_les_relacions_del_model_er/">4. Les Relacions del Model E/R</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../exercicis0/">Exercicis</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../5_relacions_de_grau_major_que_dos/">5. Relacions de grau major que dos</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">6. Model E/R Estès</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#61-cardinalitat-maxima-i-minima-participacio-total">6.1 Cardinalitat màxima i mínima. Participació total.</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#aplicacio-a-lexemple">Aplicació a l'exemple</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#62-entitats-debils">6.2 Entitats dèbils</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#63-generalitzacio-i-herencia">6.3 Generalització i herència</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#aplicacio-a-lexemple_1">Aplicació a l'exemple</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../7_restriccions_externes/">7. Restriccions externes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../exercicis1/">Exercicis</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../informaci_addicional/">Informació addicional</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">BD - Bases de Dades</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Tema 2-Modelo Entidad-Relación</li>
+      <li class="breadcrumb-item active">6. Model E/R Estès</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="6-model-er-estes">6. Model E/R Estès</h1>
+<p>El que hem vist fins ara proporciona una eina per descriure la realitat molt
+potent. Però encara hi ha restriccions del món real que no podem representar.</p>
+<p>Per exemple, de l'entitat FAMILIAR no ens interessen tots els familiars del
+món, únicament els familiars dels empleats. És més, si un empleat deixa de
+treballar en l'empresa, ja no ens interessen els familiars.</p>
+<p>O un altre exemple, hem posat que la relació DIRIGEIX és <strong>1:1</strong> , i això ens
+podria fer pensar que les dues entitats, EMPLEAT i DEPARTAMENT, participen
+exactament de la mateixa manera en la relació. Però no és exactament així, ja
+que tot departament tindrà un empleat que el dirigeix, però no tot empleat té
+un departament a dirigir.</p>
+<p>Això fa que el Model E/R s'haja desenvolupat amb les aportacions de més
+autors, fins arribar al <strong>MODEL ENTITAT-RELACIÓ ESTÈS</strong>.</p>
+<h2 id="61-cardinalitat-maxima-i-minima-participacio-total">6.1 Cardinalitat màxima i mínima. Participació total.</h2>
+<p><strong>CARDINALITAT MÀXIMA i MÍNIMA</strong> d’una entitat que participa en una relació,
+són respectivament el número màxim i mínim d’ocurrències d’aquesta entitat que
+estan relacionades amb una ocurrència de l’altra entitat</p>
+<p><img alt="" src="../estes_tot1.png" /></p>
+<p><strong>Per exemple</strong></p>
+<p>Un empleat pot dirigir 0 o 1 departament, i un departament és dirigit (com a
+mínim i com a màxim) per 1 empleat. Ho posarem entre parèntesis <strong>(card.
+mínima, card. màxima)</strong> al costat de l’entitat. En realitat el nou concepte
+és la cardinalitat mínima, ja que la màxima és la cardinalitat d'abans. Els
+valors habituals de cardinalitat mínima són 0 i 1.</p>
+<p><strong>PARTICIPACIÓ TOTAL O PARCIAL</strong></p>
+<p>Una entitat participa de forma <strong>TOTAL</strong> en una relació, si totes les seues
+ocurrències participen en alguna ocurrència de la relació. Així DEPARTAMENT
+participa de forma total, ja que tot departament té un cap. En canvi EMPLEAT
+no participa de forma total, ja que no tot empleat dirigeix un departament.
+Les entitats que participen de forma total tenen de cardinalitat mínima 1. Les
+que no 0. <strong>Per tant amb la participació total o parcial aconseguim el mateix
+que amb la cardinalitat mínima.</strong></p>
+<p>Representarem que una entitat participa de forma total en una relació amb una
+doble ratlla</p>
+<p><img alt="" src="../estes_tot2.png" /></p>
+<p>Com que de les dues maneres anteriors, la cardinalitat mínima i la
+participació total o parcial, aconseguim exactament el mateix, en aquestos
+apunts <strong>només representarem la participació total o parcial</strong> , ja que té una
+representació gràfica molt senzilla.</p>
+<hr />
+<p>[1] Hi ha autors que les posen a l’inrevés, en les altres entitats.</p>
+<h3 id="aplicacio-a-lexemple">Aplicació a l'exemple</h3>
+<p>Aplicant la participació total i parcial, el nostre exemple quedarà:</p>
+<p><img alt="" src="../estes_tot3.png" /></p>
+<h2 id="62-entitats-debils">6.2 Entitats dèbils</h2>
+<p>No totes les entitats són iguals. En les normals, que anomenarem <strong>REGULARS</strong>
+, les ocurrències tenen existència pròpia.</p>
+<p>En canvi, en les entitats <strong>DÈBILS</strong> , l’existència de les ocurrències depèn
+de l’existència de l’ocurrència d’una altra entitat, i així si desapareix
+aquesta última, haurien de desaparèixer també totes aquelles.</p>
+<p>Per exemple els familiars de Joan Peris podrien ser [Marta, dona], [Isabel,
+filla] i [Marc, fill]. Si desapareix l’empleat Joan Peris haurien de
+desaparèixer també els seus familiars.</p>
+<p>Les entitats dèbils les representarem per un doble rectangle:</p>
+<p><img alt="Cuadro de texto: FAMILIAR" src="../debil1.png" /></p>
+<p>La cardinalitat mínima i màxima de l’entitat regular en la relació amb la
+dèbil sempre és (1,1). O el que és el mateix, la dèbil sempre participa de
+forma total en la relació 1:N.</p>
+<p>Tal com hem comentat les coses fins ara direm que l’entitat dèbil té una
+<strong>DEPENDÈNCIA EN EXISTÈNCIA</strong>[1]****.</p>
+<p>Però podem anar més enllà, si a més de la dependència en existència considerem
+que per a identificar una ocurrència de l’entitat dèbil ens fa falta la clau
+de l’entitat regular de la qual depèn. Si en una biblioteca tenim més d’un
+exemplar de cada llibre, tindríem l’entitat LLIBRE (on estaria tota la
+informació: títol, autor, editorial, ...) i una altra que seria EXEMPLAR. Serà
+lògic que per a identificar un determinat exemplar utilitzem el codi del
+llibre més el número d’exemplar.</p>
+<p>Un altre exemple podria ser el de PROVÍNCIES i MUNICIPIS. El codi de la
+província consta de 2 xifres (Castelló és el 12). Per a identificar un
+municipi s'utilitzen les 2 xifres del codi de la privíncia i 4 més per al
+municipi. I fa falta el codi de la província, perquè si no es repetirien.</p>
+<p>Aquesta dependència, encara més restrictiva que la d’existència, l’anomenarem
+<strong>DEPENDÈNCIA EN IDENTIFICACIÓ</strong>. Per a marcar aquesta dependència posarem
+<strong>ID</strong> al costat de la relació.</p>
+<p>En el nostre exemple, si considerem que per a identificar l’entitat FAMILIAR
+és suficient amb l’atribut Nom, serà en existència (el cas d’una companyia
+menuda). Si considerem que no és suficient, serà en identificació i la clau
+principal serà el DNI de l’empleat més el Nom del familiar.</p>
+<p>Representarem la dependència en existència així (si considerem que amb el nom
+del familiar tenim prou per a identificar):</p>
+<p><img alt="" src="../T2_6_5.png" /></p>
+<p>I la dependència en identificació així (si considerem que també fa falta
+l'identificador de l'empleat, que és el DNI):</p>
+<p><img alt="" src="../T2_6_6.png" /></p>
+<p>Representarem aquesta última de forma alternativa amb el rombe de doble ratlla</p>
+<p><img alt="" src="../T2_6_7.png" /></p>
+<hr />
+<p>[1] En la pràctica podríem pensar que tota entitat que participa de forma
+total en una relació és dèbil com a mínim en existència. Per exemple: la
+participació total de Familiar vol dir que tot familiar ho és d'un empleat; la
+dependència en existència vol dir que no pot existir un familiar sense
+l'empleat. Com veiem la diferència és molt subtil. A pesar d'això intentarem
+fer l’esforç de diferenciar ambdós casos, perquè en el següent tema sí que ens
+durà a dues maneres de procedir diferents.</p>
+<h2 id="63-generalitzacio-i-herencia">6.3 Generalització i herència</h2>
+<p>Anem a comentar, prou per damunt, un altre aspecte recollit en el Model E/R
+Estès. I és quan una entitat es pot subdividir en d'altres. Per exemple
+podríem refinar l'entitat EMPLEAT en CAPS, SECRETARIS i TREBALLADORS.</p>
+<p>Empleat seria el <strong>SUPERTIPUS</strong> o <strong>SUPERCLASSE</strong> i els altres els
+<strong>SUBTIPUS</strong>. EMPLEAT seria la <strong>GENERALITZACIÓ</strong> dels altres. I els altres
+serien l'<strong>ESPECIALITZACIÓ</strong> d'EMPLEAT.</p>
+<p><img alt="" src="../T2_6_7_2.png" /></p>
+<p>Un aspecte important és l'<strong>HERÈNCIA</strong> , que consisteix en què els subtipus
+heretaran els atributs del supertipus, de manera que no caldrà repetir-los.
+Únicament s'hauran de declarar els atributs específics de la subclasse (en CAP
+podríem tenir l'opinió del seu departament; en SECRETARI número de pulsacions
+per segon o coneixements d'informàtica; en TREBALLADOR si està disposat a fer
+hores extres).</p>
+<p>Hi ha més d'una classe d'especialització depenent de dos criteris:</p>
+<ul>
+<li>
+<p>Si se <strong>solapen</strong> (una ocurrència de la superclasse pot pertànyer a més d'una subclasse) o són <strong>disjuntes</strong>(una ocurrència de la superclasse només pot pertànyer a una subclasse). Per exemple els empleats especialitzats per torn de treball (matí, vesprada, nit), pot donar-se el cas que algun treballador treballe matí i vesprada de forma no intensiva (atenció a públic), i per tant seria solapada. Un exemple d'especialització no solapada seria l'especialització per tipus de treball (cap, secretari, treballador), on un empleat no pot pertànyer a dues subclasses.</p>
+</li>
+<li>
+<p>Si és <strong>total</strong> (totes les ocurrències del supertipus pertanyen a algun subtipus) o <strong>parcial</strong>. Un exemple de total seria una especialització per dedicació a l'empresa (completa o no completa). Un exemple de parcial seria l'especialització per tipus de treball (cap, secretari, treballador) ja que podria haver algun treballador que no coincidesca (un assessor,...) </p>
+</li>
+</ul>
+<p>No anem a insistir molt en aquest tema perquè a més, en el tractament
+posterior (quan passem al Model Relacional), de vegades es representen totes
+les entitats, però de vegades per motius pràctics se simplifica (suprimint bé
+el supertipus, bé els subtipus).</p>
+<h3 id="aplicacio-a-lexemple_1">Aplicació a l'exemple</h3>
+<p>L'exemple, considerant únicament els subtipus <strong>CAP</strong> i <strong>TREBALLADOR</strong>
+d’<strong>EMPLEAT</strong> , quedaria així:</p>
+<p><img alt="" src="../esp2.png" /></p>
+<p>On "<strong>T,D</strong> " que està dins del triangle significa que l'especialització és
+Total i Disjunta</p>
+<p>Llicenciat sota la  <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Llicència Creative Commons Reconeixement NoComercial
+CompartirIgual 3.0</a></p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../5_relacions_de_grau_major_que_dos/" class="btn btn-neutral float-left" title="5. Relacions de grau major que dos"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../7_restriccions_externes/" class="btn btn-neutral float-right" title="7. Restriccions externes">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../5_relacions_de_grau_major_que_dos/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../7_restriccions_externes/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

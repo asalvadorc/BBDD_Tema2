@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://asalvadorc.github.io/BBDD_Tema2/BD-T02_Model_E-R/exercicis1/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Exercicis - BD - Bases de Dades</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../css/extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Exercicis";
+        var mkdocs_page_input_path = "BD-T02_Model_E-R/exercicis1.md";
+        var mkdocs_page_url = "/BBDD_Tema2/BD-T02_Model_E-R/exercicis1/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../..">
+          <img src="../../assets/logocaminas.png" class="logo" alt="Logo"/>
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Tema 2-Modelo Entidad-Relación</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../objectius_i_coneixements_previs/">Objectius i coneixements previs</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../1_introducci/">1. Introducció</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../2_exemple/">2. Exemple</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../3_les_entitats_del_model_er/">3. Les Entitats del Model E/R</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../exercicis/">Exercicis</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../4_les_relacions_del_model_er/">4. Les Relacions del Model E/R</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../exercicis0/">Exercicis</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../5_relacions_de_grau_major_que_dos/">5. Relacions de grau major que dos</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../6_model_er_ests/">6. Model E/R Estès</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../7_restriccions_externes/">7. Restriccions externes</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Exercicis</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#exercici-3">Exercici 3</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#exercici-4">Exercici 4</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#exercici-5">Exercici 5</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#exercici-6">Exercici 6</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../informaci_addicional/">Informació addicional</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">BD - Bases de Dades</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Tema 2-Modelo Entidad-Relación</li>
+      <li class="breadcrumb-item active">Exercicis</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="exercicis">Exercicis</h1>
+<h2 id="exercici-3"><img alt="" src="../icon_activity.gif" /> Exercici 3</h2>
+<p>Dissenyar un esquema E/R que arreplegue informació sobre una universitat. Es
+considera que:</p>
+<ul>
+<li>
+<p>Els departaments (com per exemple el Departament de <em>Llenguatges i Sistemes Informàtics</em>) poden estar en una única facultat o ser interfacultatius, agrupant en aquest cas càtedres que pertanyen a facultats distintes.</p>
+</li>
+<li>
+<p>Una càtedra (per exemple la de <em>Bases de Dades</em>) pertany a un únic departament.</p>
+</li>
+<li>
+<p>Una càtedra està en una única facultat.</p>
+</li>
+<li>
+<p>Un professor està sempre assignat a un únic departament i adscrit a una o més d'una càtedra. Pot canviar de càtedra però no de departament. Ens interessa la data en què un professor és adscrit a una càtedra.</p>
+</li>
+<li>
+<p>Existeixen àrees de coneixement (com per exemple l'àrea d'<em>Informàtica</em> , que inclou els departaments de <em>Llenguatges i Sistemes Informàtics</em> i de <em>Enginyeria i Ciència dels Computadors</em>) i tot departament tindrà una única àrea de coneixement.</p>
+</li>
+</ul>
+<h2 id="exercici-4"><img alt="" src="../icon_activity.gif" /> Exercici 4</h2>
+<p>L'anàlisi de requisits d'una determinada xarxa bancària és el següent:</p>
+<ul>
+<li>
+<p>De cada banc ens interessa el nom i l'adreça de la seu social. Hi ha un codi distint per a cada entitat bancària.</p>
+</li>
+<li>
+<p>Cada banc té distintes sucursal, que s'identifiquen <em>internament</em> per un codi.</p>
+</li>
+<li>
+<p>Cada sucursal té assignats una sèrie de comptes corrents, que s'identifiquen <em>internament</em> per un codi. Un compte pot pertànyer a un o més d'un client. És possible que cada client puga fer operacions distintes amb els comptes. Així podria ser que, encara que dos clients siguen titulars d'un mateix compte, només un tinga facultat per tancar-lo.</p>
+</li>
+<li>
+<p>Cada client, que s'identifica pel seu DNI, pot tenir més d'un compte, i evidentment privilegis distints en cadascun d'ells.</p>
+</li>
+<li>
+<p>Cada compte pot tenir domiciliacions associades a ell.</p>
+</li>
+<li>
+<p>Les sucursals poden atorgar préstecs als clients, que no estaran associats als comptes. Cada préstec s'atorga a nom d'un únic client, i a un client se li pot atorgar més d'un préstec.</p>
+</li>
+</ul>
+<h2 id="exercici-5"><img alt="" src="../icon_activity.gif" /> Exercici 5</h2>
+<p>Es vol mantenir informació sobre una <strong>biblioteca</strong> , on podem tenir de cada
+llibre més d'un exemplar, que a més es poden prestar, i que també ens
+interessa un històric de préstecs. L'anàlisi de requeriments seria el següent:</p>
+<ul>
+<li>
+<p>Cada llibre (amb un determinat títol, ISBN, idioma, número d'edició i data d'edició) tracta només d'un tema, està editat per una única editorial, escrit per un o més autors, i disposarem d'uns quants exemplars. Dels exemplars sempre tindrem el número de registre, que l'identifica unívocament.</p>
+</li>
+<li>
+<p>Els préstecs són dels exemplars dels llibres, que són les materialitzacions dels llibres. Un exemplar es pot prestar a un únic lector (del qual tindrem Dni, Nom, Adreça i Telèfon), i ens interessa la data en la qual s'ha prestat. Un lector pot tenir més d'un llibre prestat.</p>
+</li>
+<li>
+<p>A banda del préstec actual, voldrem saber en el passat a qui s'ha prestat. Per tant en l'històric de préstecs cada exemplar s'haurà prestat a molts lectors, i per a poder dur el seguiment ens interessa la data de préstec i la de tornada.</p>
+</li>
+</ul>
+<h2 id="exercici-6"><img alt="" src="../icon_activity.gif" /> Exercici 6</h2>
+<p>Realitzeu l'esquema E/R que arreplegue informació d'una associació
+d'afeccionats a les <strong>papallones</strong> , que volen guardar informació respecte a
+exemplars capturats bé per a la seua observació, bé per a ser inclosos en una
+col·lecció:</p>
+<ul>
+<li>
+<p>Com en qualsevol ordre natural, un exemplar de papallona pertany a una espècie única. Una espècie pertany a un gènere únic, i un gènere a una família natural única.</p>
+</li>
+<li>
+<p>Cada espècie de papallona té un nom científic únic, encara que el seu nom comú, que depèn de la comarca on s'ha agafat, també ens interessa.</p>
+</li>
+<li>
+<p>Ja siga per a l'observació o per a formar part d'una col·lecció, primer s'ha de capturar l'exemplar de papallona. Aquesta captura la realitza una única persona, i voldrem saber també en quin lloc (comarca) s'ha capturat. Si l'exemplar és destinat a l'observació voldrem saber la durada de l'observació.</p>
+</li>
+<li>
+<p>Una determinada persona només pot ser propietària d'una col·lecció, però els exemplars d'aquesta col·lecció poden haver estat capturats per altres persones.</p>
+</li>
+<li>
+<p>Es vol mantenir informació de les famílies, gèneres i espècies de papallones encara que no s'hagen capturat exemplars dels mateixos.</p>
+</li>
+<li>
+<p>Una papallona només pot pertànyer a una col·lecció, i una col·lecció està formada almenys per un exemplar. Tota papallona que pertany a una col·lecció tindrà un determinat valor. </p>
+</li>
+</ul>
+<!--
+## ![](icon_activity.gif) Exercici 7
+
+Una empresa de línies ferroviàries vol que se li dissenye una Base de Dades
+per a la seua gestió. Aquesta és l'anàlisi de requeriments:
+
+  * La companyia necessita controlar els trens, els seus treballadors i els viatges realitzats. 
+
+  * Dels treballadors es vol guardar el seu codi i nom. Per als conductors, a més a més, ens interessa el número d'hores que han realitzat.
+
+  * Tots els treballadors tenen una estació base a la qual pertanyen i de les estacions es vol tenir el nom, la localitat i el telèfon.
+
+  * Els trens tenen un codi que els identifica, un tipus (rodalies, grans línies,…) i una estació on se li realitzen les revisions de manteniment.
+
+  * Un trajecte serà un tipus de viatge que es realitza regularment. Tindrà una estació origen i una estació de destí.
+
+  * Un viatge de tren és una materialització d'un trajecte, i utilitzarà òbviament un tren, una data, una hora d'eixida i un o uns conductors que el porten (no ens interessen els altres possibles treballadors que van en els viatges). Tots els viatges s'identifiquen per un codi, per exemple, el viatge corresponent al trajecte Castelló - València de les 12:10 d'un determinat dia és el viatge 4356.
+
+Opcionalment, podem posar totes les estacions a les quals s'arriba en un
+trajecte (substituint l'estació origen i destí). Haurem de saber si l'estació
+és origen, destí o de pas.
+
+-->
+
+<p>Llicenciat sota la  <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Llicència Creative Commons Reconeixement NoComercial
+CompartirIgual 3.0</a></p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../7_restriccions_externes/" class="btn btn-neutral float-left" title="7. Restriccions externes"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../informaci_addicional/" class="btn btn-neutral float-right" title="Informació addicional">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../7_restriccions_externes/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../informaci_addicional/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

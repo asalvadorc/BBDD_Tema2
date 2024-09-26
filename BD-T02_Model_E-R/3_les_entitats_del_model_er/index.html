@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://asalvadorc.github.io/BBDD_Tema2/BD-T02_Model_E-R/3_les_entitats_del_model_er/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>3. Les Entitats del Model E/R - BD - Bases de Dades</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../css/extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "3. Les Entitats del Model E/R";
+        var mkdocs_page_input_path = "BD-T02_Model_E-R/3_les_entitats_del_model_er.md";
+        var mkdocs_page_url = "/BBDD_Tema2/BD-T02_Model_E-R/3_les_entitats_del_model_er/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../..">
+          <img src="../../assets/logocaminas.png" class="logo" alt="Logo"/>
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Tema 2-Modelo Entidad-Relación</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../objectius_i_coneixements_previs/">Objectius i coneixements previs</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../1_introducci/">1. Introducció</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../2_exemple/">2. Exemple</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">3. Les Entitats del Model E/R</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#31-entitats">3.1 Entitats</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#aplicacio-a-lexemple">Aplicació a l'exemple</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#32-atributs">3.2 Atributs</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#aplicacio-a-lexemple_1">Aplicació a l'exemple</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../exercicis/">Exercicis</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../4_les_relacions_del_model_er/">4. Les Relacions del Model E/R</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../exercicis0/">Exercicis</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../5_relacions_de_grau_major_que_dos/">5. Relacions de grau major que dos</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../6_model_er_ests/">6. Model E/R Estès</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../7_restriccions_externes/">7. Restriccions externes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../exercicis1/">Exercicis</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../informaci_addicional/">Informació addicional</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">BD - Bases de Dades</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Tema 2-Modelo Entidad-Relación</li>
+      <li class="breadcrumb-item active">3. Les Entitats del Model E/R</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="3-les-entitats-del-model-er">3. Les Entitats del Model E/R</h1>
+<p>Per a fer un esquema amb el Model Entitat-Relació, començarem sempre per les
+primeres, per les entitats.</p>
+<p>És a dir, a partir de les especificacions del problema, intentarem esbrinar
+les entitats.</p>
+<!--
+<video width="320" height="240" controls>
+  <source src="T02_Peli1.mp4" type="video/mp4">
+  Tu navegador no soporta la etiqueta de video.
+</video>
+-->
+<h2 id="31-entitats">3.1 Entitats</h2>
+<p>Per a fer un esquema amb el Model Entitat-Relació, començarem sempre per les
+primeres, per les entitats.</p>
+<p>És a dir, a partir de les especificacions del problema, intentarem esbrinar
+les entitats.</p>
+<p>L'<strong>ENTITAT</strong> serà una persona, cosa, lloc, concepte o succés, amb existència
+real o abstracta, que ens és d'interès.</p>
+<p>Així per exemple, els empleats són entitats. Com tots els empleats tindran per
+a nosaltres les mateixes característiques (nom, adreça,...), encara que
+cadascú amb valors distints, els podem englobar en la mateixa estructura.</p>
+<p>Definirem <strong>TIPUS D'ENTITAT</strong> a l'estructura genèrica (EMPLEAT) i <strong>OCURRÈNCIA
+D'ENTITAT</strong> a cadascuna de les realitzacions concretes (cadascun dels
+empleats, per exemple Joan Peris). Evidentment, en el disseny no ens
+interessen les ocurrències, sinó el Tipus d'Entitat. El representarem per un
+rectangle amb el nom de l'entitat a l'interior (preferiblement en singular).</p>
+<h3 id="aplicacio-a-lexemple">Aplicació a l'exemple</h3>
+<p>En el nostre exemple, el del punt 2, quedaran les següents Entitats:</p>
+<p><img alt="" src="../entitats.png" /></p>
+<h2 id="32-atributs">3.2 Atributs</h2>
+<p>Un <strong>ATRIBUT</strong> és cadascuna de les característiques d'una entitat que ens
+interessen.</p>
+<p>Per exemple en l'entitat EMPLEAT tindrem els atributs <em>nom, DNI, adreça,
+telèfon, sou</em> i <em>data de naixement</em>.</p>
+<p>No considerarem atributs les característiques que no ens interessen (estatura,
+talla pantalons, etc.)</p>
+<p>Una ocurrència d'entitat tindrà un <strong>VALOR</strong> per a cada atribut, per exemple
+<em>Joan Peris, 18.901.234, 964-22.33.44, 1.200,00€., 12-5-1960.</em></p>
+<p>Però de vegades potser que el contingut d'un atribut siga el valor <strong>NUL</strong>
+(per exemple si no té telèfon o el desconeixem).</p>
+<p>Els atributs poden ser <strong>SIMPLES</strong> o <strong>COMPOSTOS</strong> , si estan formats per una
+única informació o per més d'una. Així, un exemple d'atribut compost seria el
+nom que podria estar format per: <em>nom=(nom de pila, primer cognom, segon
+cognom)</em>.</p>
+<p>Poden haver atributs <strong>MULTIVALUATS</strong> , que vol dir que poden agafar més d'un
+valor. Per exemple suposem que en el cas anterior considerem el camp <em>altres
+telèfons****</em>(per si en l'empresa hi ha moments que hem de localitzar
+l'empleat urgentment). Potser un empleat no tinga cap valor en aquest camp. I
+potser un altre en tinga dos (el mòbil i el d'una segona residència). En
+general fugirem d'aquestos camps per comoditat, però el model ho accepta.</p>
+<p>També poden haver atributs <strong>DERIVATS</strong> , és a dir, atributs que es poden
+calcular a partir d'altres. Podria ser el cas del camp <em>edat</em> , que es pot
+calcular a partir de la data del sistema i de <em>data de naixement</em>.</p>
+<p>El model necessita poder identificar cada ocurrència sense marge d'error. Hi
+haurà algun atribut (o conjunt d'atributs) que acomplirà aquesta premisa
+d'identificar unívocament. I per a que això siga possible, aquest atribut
+haurà de tenir valors distints per a totes les ocurrències (sinó no podria
+identificar-les); i al mateix temps no podrà tenir en cap cas el valor nul. En
+l'exemple EMPLEAT, el <em>nom</em> o el <em>DNI</em> servirien per identificar. En canvi el
+sou no serviria, ja que més d'un empleat pot tenir el mateix sou. El telèfon
+tampoc, perquè potser siga nul.</p>
+<p>Als atributs (o conjunts d'atributs) que acompleixen la condició anterior els
+anomenarem <strong>CLAUS CANDIDATES</strong> , i d'entre totes les claus candidates triarem
+una i l'anomenarem <strong>CLAU PRINCIPAL</strong>.</p>
+<p>Totes les entitats han de tenir una clau principal. És una de les restriccions
+del Model E/R.</p>
+<p>Representarem els atributs amb un cercle unit a l'entitat per una línia, i en
+l'interior o al costat posarem el nom de l'atribut. La clau principal
+l'assenyalarem subratllant-la, o amb el cercle negre.</p>
+<p>Per als atributs multivaluats posarem <strong><em>n</em></strong> en la línia. I els derivats els
+representarem amb línies discontínues.</p>
+<p>Ací tindríem dues maneres (absolutament equivalents) de representar l'entitat
+EMPLEAT amb els seus atributs.  </p>
+<table>
+<thead>
+<tr>
+<th><img alt="" src="../atributs1.png" /></th>
+<th></th>
+<th><img alt="" src="../atributs2.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="aplicacio-a-lexemple_1">Aplicació a l'exemple</h3>
+<p>En el nostre exemple del punt 2 quedarien les altres entitats amb els següents
+atributs:</p>
+<p><img alt="" src="../atributs3.png" /></p>
+<!--
+### 3.2.1 Dominis
+
+
+
+És el conjunt de possibles valors que pot agafar un atribut. Així, per
+exemple, el domini de l'atribut Dni són els números enters, i encara podríem
+filar més prim, els enters de 8 xifres decimals (fins el 99.999.999). Això sí,
+si preveem que potser ens convinga guardar també la lletra de NIF, aleshores
+hauria de ser alfanumèric de 9 caràcters. El número identificatiu del
+departament podria ser un número de l'1 al 10.
+
+Més d'un atribut pot compartir el mateix domini, per exemple si incloem
+l'atribut data d'incorporació a la companyia a l'entitat EMPLEAT tindria el
+mateix domini que el camp data de naixement.
+
+Quan treballem en el Model Relacional, en el tema següent, una de les
+restriccions que farem serà definir clarament el domini de cada atribut, per a
+no deixar introduir valors invàlids.
+
+-->
+
+<p>Llicenciat sota la  <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Llicència Creative Commons Reconeixement NoComercial
+CompartirIgual 3.0</a></p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../2_exemple/" class="btn btn-neutral float-left" title="2. Exemple"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../exercicis/" class="btn btn-neutral float-right" title="Exercicis">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../2_exemple/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../exercicis/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

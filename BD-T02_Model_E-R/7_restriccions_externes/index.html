@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://asalvadorc.github.io/BBDD_Tema2/BD-T02_Model_E-R/7_restriccions_externes/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>7. Restriccions externes - BD - Bases de Dades</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../css/extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "7. Restriccions externes";
+        var mkdocs_page_input_path = "BD-T02_Model_E-R/7_restriccions_externes.md";
+        var mkdocs_page_url = "/BBDD_Tema2/BD-T02_Model_E-R/7_restriccions_externes/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../..">
+          <img src="../../assets/logocaminas.png" class="logo" alt="Logo"/>
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Tema 2-Modelo Entidad-Relación</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../objectius_i_coneixements_previs/">Objectius i coneixements previs</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../1_introducci/">1. Introducció</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../2_exemple/">2. Exemple</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../3_les_entitats_del_model_er/">3. Les Entitats del Model E/R</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../exercicis/">Exercicis</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../4_les_relacions_del_model_er/">4. Les Relacions del Model E/R</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../exercicis0/">Exercicis</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../5_relacions_de_grau_major_que_dos/">5. Relacions de grau major que dos</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../6_model_er_ests/">6. Model E/R Estès</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">7. Restriccions externes</a>
+    <ul class="current">
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../exercicis1/">Exercicis</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../informaci_addicional/">Informació addicional</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">BD - Bases de Dades</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Tema 2-Modelo Entidad-Relación</li>
+      <li class="breadcrumb-item active">7. Restriccions externes</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="7-restriccions-externes">7. Restriccions externes</h1>
+<p>A pesar de tot el que hem vist en el M E/R Estès, pot donar-se el cas que no
+es puguen representar tots els requeriments. En definitiva no deixa de ser una
+eina poderosa però limitada. La manera de representar aquestos requeriments
+serà per mig de les <strong>restriccions externes</strong> , que les expressarem de
+paraula.</p>
+<p>Suposem que en l'exemple posem la condició (ben lògica) que el cap d'un
+departament ha de ser membre d'aquest. O un altre exemple, suposem que un
+empleat només pot treballar en projectes coordinats pel seu departament. Com
+no ho podem posar en el diagrama E/R, ho posarem de paraula:</p>
+<p><strong>Rex1</strong> : El cap d'un departament ha de ser membre d'aquest.</p>
+<p><strong>Rex2</strong> : Un empleat només pot treballar en projectes coordinats pel seu
+departament.</p>
+<p>Llicenciat sota la  <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Llicència Creative Commons Reconeixement NoComercial
+CompartirIgual 3.0</a></p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../6_model_er_ests/" class="btn btn-neutral float-left" title="6. Model E/R Estès"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../exercicis1/" class="btn btn-neutral float-right" title="Exercicis">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../6_model_er_ests/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../exercicis1/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

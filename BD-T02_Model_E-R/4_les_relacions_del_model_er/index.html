@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://asalvadorc.github.io/BBDD_Tema2/BD-T02_Model_E-R/4_les_relacions_del_model_er/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>4. Les Relacions del Model E/R - BD - Bases de Dades</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../css/extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "4. Les Relacions del Model E/R";
+        var mkdocs_page_input_path = "BD-T02_Model_E-R/4_les_relacions_del_model_er.md";
+        var mkdocs_page_url = "/BBDD_Tema2/BD-T02_Model_E-R/4_les_relacions_del_model_er/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../..">
+          <img src="../../assets/logocaminas.png" class="logo" alt="Logo"/>
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Tema 2-Modelo Entidad-Relación</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../objectius_i_coneixements_previs/">Objectius i coneixements previs</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../1_introducci/">1. Introducció</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../2_exemple/">2. Exemple</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../3_les_entitats_del_model_er/">3. Les Entitats del Model E/R</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../exercicis/">Exercicis</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">4. Les Relacions del Model E/R</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#41-relacio">4.1 Relació</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#aplicacio-a-lexemple">Aplicació a l'exemple</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#42-atributs-de-relacio">4.2 Atributs de Relació</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#aplicacio-a-lexemple_1">Aplicació a l'exemple</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#43-tipus-de-relacio-o-cardinalitat">4.3 Tipus de Relació o Cardinalitat</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#aplicacio-a-lexemple_2">Aplicació a l'exemple</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../exercicis0/">Exercicis</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../5_relacions_de_grau_major_que_dos/">5. Relacions de grau major que dos</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../6_model_er_ests/">6. Model E/R Estès</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../7_restriccions_externes/">7. Restriccions externes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../exercicis1/">Exercicis</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../informaci_addicional/">Informació addicional</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">BD - Bases de Dades</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Tema 2-Modelo Entidad-Relación</li>
+      <li class="breadcrumb-item active">4. Les Relacions del Model E/R</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="4-les-relacions-del-model-er">4. Les Relacions del Model E/R</h1>
+<p>Encara no hem relacionat les entitats entre elles, i per tant encara no hem
+dit que tal treballador pertany a tal departament (Joan Peris està en
+Comptabilitat, per exemple), o que tal treballador està en tal projecte
+dedicant-li tantes hores setmanals.</p>
+<!--
+<video width="320" height="240" controls>
+  <source src="T02_Peli2.mp4" type="video/mp4">
+  Tu navegador no soporta la etiqueta de video.
+</video>
+-->
+
+<p></p>
+<h2 id="41-relacio">4.1 Relació</h2>
+<p>Encara no hem relacionat les entitats entre elles, i per tant encara no hem
+dit que tal treballador pertany a tal departament (Joan Peris està en
+Comptabilitat, per exemple), o que tal treballador està en tal projecte
+dedicant-li tantes hores setmanals.</p>
+<p><strong>RELACIÓ</strong> és una associació o correspondència entre entitats.</p>
+<p>El <strong>TIPUS DE RELACIÓ</strong> serà l’estructura genèrica, l’associació entre dos
+tipus d’entitat, i englobarà les <strong>OCURRÈNCIES DE RELACIÓ</strong> , que relacionaran
+ocurrències de les entitats (Joan Peris pertany al departament de
+Comptabilitat, Pilar Gomis al de Vendes, ...).</p>
+<p>Representarem la relació per un rombe, amb el nom de la relació a l’interior.
+Habitualment serà un verb que descriu la relació entre les dues entitats.
+Unirem el rombe amb els rectangles de les entitats per mig de línies.</p>
+<p>Així tindrem:</p>
+<p><img alt="" src="../relacio1.png" /></p>
+<p>En una Relació poden intervenir 2 entitats (Relació Binària), 3 entitats
+(ternària), o fins i tot més. Aquest número serà el <strong>GRAU</strong> de la relació.</p>
+<p>Un exemple de relació ternària seria:</p>
+<p><img alt="" src="../relacio2.png" /></p>
+<p>I una ocurrència d’aquesta relació podria ser: Comptabilitat compra una
+calculadora a Distribucions Garcia, S.L.</p>
+<p>També es pot donar el cas que només intervinga una entitat. Aleshores seria
+reflexiva o de grau 1. Per exemple, els empleats tenen un supervisor, que
+també és un empleat de la companyia.</p>
+<p><img alt="" src="../relacio3.png" /></p>
+<p>Per últim, també es pot donar el cas que dues entitats tinguen entre elles més
+d’una relació. En el nostre exemple els empleats pertanyen als departaments.
+Però alguns empleats dirigeixen els departaments, i aquesta és una relació
+distinta de l’anterior. Per això convé posar el nom de la relació, per evitar
+confusions.</p>
+<p><img alt="" src="../relacio4.png" /></p>
+<p><u><strong>Nota</strong></u> </p>
+<div style="background-color: #d6eaf8; color: black; padding: 5px;">
+
+  Potser a mida que fem exercicis ens entre perea de posar nom a totes les
+  relacions, sobretot perquè moltes estarà molt clar què signifiquen. Però
+  haurem de posar sempre el nom en aquelles que puguen dur a confusió o
+  aquelles que no està clar el seu significat.
+<p></p>
+</div>
+
+<p></p>
+<h3 id="aplicacio-a-lexemple">Aplicació a l'exemple</h3>
+<p>Després d'incorporar les relacions, el nostre exemple quedarà:</p>
+<p><img alt="" src="../relacio5.png" /></p>
+<h2 id="42-atributs-de-relacio">4.2 Atributs de Relació</h2>
+<p>Les relacions també poden tenir atributs, igual que les entitats. Un atribut
+de relació seria el número d’hores que treballa un empleat en un projecte, que
+seria un atribut de la relació <strong>treballa</strong>. Per exemple <em>Joan Peris</em> treballa
+en el projecte <em>Estudi rendiment</em> , i li dedica 5 hores setmanals. Fixeu-vos
+que no és un atribut ni d’empleat ni de projecte, sinó de la relació que hi ha
+entre elles. Un altre atribut de relació podria ser la data quan un empleat
+comença a dirigir un departament.</p>
+<p>Representarem els atributs de relació com els atributs d'entitat, però ara
+units a les relacions.</p>
+<h3 id="aplicacio-a-lexemple_1">Aplicació a l'exemple</h3>
+<p>Posarem en roig els atributs de relació:</p>
+<p><img alt="" src="../relacio6.png" /></p>
+<h2 id="43-tipus-de-relacio-o-cardinalitat">4.3 Tipus de Relació o Cardinalitat</h2>
+<p>Encara no hem reflectit tota la realitat. Per exemple no hem pogut expressar
+que un empleat pertany únicament a un departament, i en canvi pot estar en més
+d’un projecte.</p>
+<p>Això ho farem per mig de la cardinalitat, que ens durà a distintes classes de
+relacions.</p>
+<p>La <strong>CARDINALITAT</strong> especifica el número d'ocurrències d'una entitat que poden
+intervenir en la relació per cada ocurrència de l'altra entitat.</p>
+<p>Una ocurrència d'EMPLEAT (un empleat concret) només pot estar relacionat amb
+una ocurrència de DEPARTAMENT (Joan Peris pertany a Comptabilitat, i a cap
+altre departament més). En canvi una ocurrència de DEPARTAMENT pot estar
+relacionada amb moltes ocurrències d'EMPLEAT (tots els que hi pertanyen).
+Aleshores la relació PERTANY entre DEPARTAMENT i EMPLEAT té raó de
+cardinalitat <strong>1:N</strong> (un departament relacionat amb molts empleats, però un
+empleat amb un departament).</p>
+<p>Ho representarem així:</p>
+<p><img alt="" src="../relacio_card1.png" /></p>
+<p>o millor:</p>
+<p><img alt="" src="../relacio_card2.png" /></p>
+<p>Els distints tipus de relacions que hi pot haver són:</p>
+<ul>
+<li>
+<p><strong>1:1</strong> (llegirem: <strong>ú a ú</strong>) com a màxim una ocurrència de cada. Per exemple la relació DIRIGEIX (un empleat dirigeix com a molt un departament, i un departament és dirigit per un empleat).</p>
+</li>
+<li>
+<p><strong>1:N</strong> (llegirem: <strong>ú a ena</strong> o <strong>ú a molts</strong>) en una entitat una ocurrència i en l'altra moltes.</p>
+</li>
+<li>
+<p><strong>M:N</strong> (llegirem: <strong>ema a ena</strong> o <strong>molts a molts</strong>) hi ha més d'una ocurrència en cada entitat. Per exemple la relació TREBALLA (un empleat pot treballar en més d'un projecte, i en un projecte pot treballar més d'un empleat).</p>
+</li>
+</ul>
+<p>Per a poder distingir aquesta cardinalitat ens farem dues preguntes, resultat
+de fixar una ocurrència en una entitat i veure quantes ocurrències es
+relacionen en l'altra entitat. És a dir, per a una ocurrència d'una, quantes
+hi ha de l'altra. En l'exemple de més amunt:</p>
+<ul>
+<li>
+<p>A un departament determinat, quants empleats poden pertànyer? (molts).</p>
+</li>
+<li>
+<p>Un empleat determinat, a quants departaments pot pertànyer? (a un).</p>
+</li>
+</ul>
+<p>Aquestes preguntes normalment tenen molt fàcil contestació. Si hi ha dubte
+hauríem d'investigar millor en les especificacions.</p>
+<blockquote>
+<p><em><strong>Nota</strong></em></p>
+<p>La cardinalitat M:N també la podríem representar N:N. Senzillament vol dir
+que són moltes ocurrències de cada entitat per cadascuna de l'altra. En
+aquestos apunts normalment posaré M:N, senzillament perquè "sóna" millor.</p>
+</blockquote>
+<h3 id="aplicacio-a-lexemple_2">Aplicació a l'exemple</h3>
+<p>L'exemple cada vegada està més complet:</p>
+<p><img alt="" src="../relacio_card3.png" /></p>
+<p>Llicenciat sota la  <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Llicència Creative Commons Reconeixement NoComercial
+CompartirIgual 3.0</a></p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../exercicis/" class="btn btn-neutral float-left" title="Exercicis"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../exercicis0/" class="btn btn-neutral float-right" title="Exercicis">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../exercicis/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../exercicis0/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
